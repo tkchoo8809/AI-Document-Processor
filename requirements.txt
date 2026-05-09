@@ -1,0 +1,14 @@
+transformers==4.57.6
+huggingface_hub==0.36.2
+unsloth==2026.2.1
+xformers==0.0.35
+pydantic-ai==1.63.0
+qwen-vl-utils==0.0.14
+qdrant-client==1.16.2
+pypdfium2==5.5.0
+torchaudio==2.10.0+cu128
+torchvision==0.25.0+cu128
+torch==2.10.0+cu128
+pydantic-evals==1.63.0
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+# pip index versions
