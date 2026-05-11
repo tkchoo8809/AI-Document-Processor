@@ -1,6 +1,6 @@
-# Visual RAG & Document Intelligence Capstone Project
+# Document Intelligence Visual RAG
 
-A prototype solution developed to tackle the extraction and processing of structured information from scanned documents using fine-tuned vision language models (VLMs) and Retrieval-Augmented Generation (RAG).
+An open-source prototype solution for extracting structured data from scanned documents using fine-tuned vision language models and Retrieval-Augmented Generation (RAG).
 
 ## 🧩 Problem Statement
 
@@ -380,7 +380,7 @@ Models are specified in individual scripts. Supported models:
 - `ColQwen2ForRetrieval`
 - `ColPaliForRetrieval`
 
-## 📊 Data Format
+## �📊 Data Format
 
 ### JSONL Training Data Format
 
@@ -473,3 +473,17 @@ os.environ["HF_HUB_ETAG_TIMEOUT"] = "1200"
 - Vision models require 4-8GB VRAM for inference, 16GB+ for training
 - Qdrant supports both cloud and self-hosted deployments
 - JSON schema validation is enforced at extraction time
+
+## � Future Implementation
+
+Planned extensions include a FastAPI backend to expose the document processing pipeline as REST APIs, and a Streamlit front end for easy upload, search, and visualization of extraction results.
+
+- **FastAPI Backend**:
+  - Serve document upload and indexing endpoints
+  - Provide search and retrieval APIs for Qdrant-backed documents
+  - Offer JSON output endpoints for structured extraction and reasoning
+
+- **Streamlit Front End**:
+  - User-facing interface for uploading scans and PDFs
+  - Instant display of extracted metadata, tables, and agent responses
+  - Interactive filtering, search, and document review workflows
