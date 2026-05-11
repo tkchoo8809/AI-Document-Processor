@@ -231,16 +231,6 @@ train_unsloth_qwen(dataset_location="augmented_data")
 }
 ```
 
-**Extraction Output Format**
-```json
-{
-  "field_1": "value1",
-  "field_2": "value2",
-  "monetary_field": 1000.00,
-  "date_field": "01-01-2024"
-}
-```
-
 ### `model_inference.py`
 Run inference using fine-tuned or pre-trained vision models.
 
