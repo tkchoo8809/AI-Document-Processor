@@ -212,6 +212,35 @@ from model_training import train_unsloth_qwen
 train_unsloth_qwen(dataset_location="augmented_data")
 ```
 
+**JSONL Training Data Format**
+```json
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {"type": "image", "image": "image_path.jpg"},
+        {"type": "text", "text": "Extract structured data..."}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "{...extracted_json...}"
+    }
+  ]
+}
+```
+
+**Extraction Output Format**
+```json
+{
+  "field_1": "value1",
+  "field_2": "value2",
+  "monetary_field": 1000.00,
+  "date_field": "01-01-2024"
+}
+```
+
 ### `model_inference.py`
 Run inference using fine-tuned or pre-trained vision models.
 
@@ -380,38 +409,6 @@ Models are specified in individual scripts. Supported models:
 - `ColQwen2ForRetrieval`
 - `ColPaliForRetrieval`
 
-## �📊 Data Format
-
-### JSONL Training Data Format
-
-```json
-{
-  "messages": [
-    {
-      "role": "user",
-      "content": [
-        {"type": "image", "image": "image_path.jpg"},
-        {"type": "text", "text": "Extract structured data..."}
-      ]
-    },
-    {
-      "role": "assistant",
-      "content": "{...extracted_json...}"
-    }
-  ]
-}
-```
-
-### Extraction Output Format
-
-```json
-{
-  "field_1": "value1",
-  "field_2": "value2",
-  "monetary_field": 1000.00,
-  "date_field": "01-01-2024"
-}
-```
 
 ## 🔍 Key Libraries
 
